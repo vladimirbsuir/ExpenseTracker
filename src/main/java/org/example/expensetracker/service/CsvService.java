@@ -25,7 +25,6 @@ import java.util.List;
 public class CsvService {
     private final ExpenseService expenseService;
     private final CategoryService categoryService;
-    private final BudgetService budgetService;
 
     public byte[] exportExpensesToCsv() throws IOException {
         List<Expense> expenses = expenseService.getAllExpenses();
